@@ -1,6 +1,6 @@
 # Module 08: Query Optimization
 
-## =Ö Overview
+## ðŸ“– Overview
 
 Advanced query optimization techniques including joins, subqueries, CTEs, parameter sniffing, plan guides, and query hints.
 
@@ -274,4 +274,4 @@ FROM dbo.Orders;
 
 ---
 
-**<‰ Congratulations! You've completed Section 2: Performance Foundations!**
+**<â€° Congratulations! You've completed Section 2: Performance Foundations!**
