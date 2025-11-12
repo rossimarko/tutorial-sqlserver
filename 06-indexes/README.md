@@ -176,14 +176,14 @@ ORDER BY ips.avg_fragmentation_in_percent DESC;
 -  Non-clustered indexes on frequently filtered columns
 -  Use INCLUDE for covering indexes
 -  Filtered indexes for sparse data
-- L Avoid over-indexing (too many indexes)
-- L Don't index low-selectivity columns
+- ❌ Avoid over-indexing (too many indexes)
+- ❌ Don't index low-selectivity columns
 
 **Columnstore:**
--  Use for fact tables in data warehouses
--  Use for analytics workloads
--  Batch size should be > 102,400 rows
-- L Not ideal for OLTP with frequent updates
+- � Use for fact tables in data warehouses
+- � Use for analytics workloads
+- � Batch size should be > 102,400 rows
+- ❌ Not ideal for OLTP with frequent updates
 
 ---
 
