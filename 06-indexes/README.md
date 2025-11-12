@@ -1,6 +1,6 @@
 # Module 06: Indexes
 
-## =Ö Overview
+## ðŸ“– Overview
 
 Indexes are the most important tool for query performance. This module covers clustered indexes, non-clustered indexes, included columns, filtered indexes, columnstore indexes, and SQL Server 2022 enhancements.
 
@@ -79,7 +79,7 @@ SELECT
     s.user_seeks + s.user_scans + s.user_lookups AS total_reads,
     CASE
         WHEN s.user_updates > (s.user_seeks + s.user_scans + s.user_lookups) * 10
-            THEN '  More writes than reads'
+            THEN 'Â  More writes than reads'
         ELSE ' Good'
     END AS assessment
 FROM sys.dm_db_index_usage_stats s
@@ -160,7 +160,7 @@ SELECT
         WHEN ips.avg_fragmentation_in_percent > 30 AND ips.page_count > 1000
             THEN '=4 Rebuild'
         WHEN ips.avg_fragmentation_in_percent > 10 AND ips.page_count > 1000
-            THEN '=á Reorganize'
+            THEN '=Ã¡ Reorganize'
         ELSE ' Good'
     END AS recommendation
 FROM sys.dm_db_index_physical_stats(DB_ID(), NULL, NULL, NULL, 'LIMITED') ips
