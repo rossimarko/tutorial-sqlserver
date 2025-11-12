@@ -232,7 +232,7 @@ ORDER BY database_id, file_id;
 
 ```sql
 -- Kill blocking session
--- KILL <session_id>;
+-- KILL session_id;  -- Replace 'session_id' with the actual session ID to terminate
 
 -- Clear plan cache
 -- DBCC FREEPROCCACHE;
