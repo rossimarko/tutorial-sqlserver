@@ -1,6 +1,6 @@
 # Module 09: Index Maintenance
 
-## =Ö Overview
+## ðŸ“– Overview
 
 Index maintenance is critical for optimal performance. This module covers fragmentation, reorganize vs rebuild, online operations, fill factor, and SQL Server 2022 resumable index operations.
 
