@@ -1,12 +1,12 @@
 # Module 05: Statistics
 
-## =Ö Overview
+## ðŸ“– Overview
 
 Statistics are critical for query performance. The SQL Server Query Optimizer uses statistics to estimate row counts and generate efficient execution plans. This module covers statistics architecture, automatic management, manual maintenance, and troubleshooting.
 
 ---
 
-## <¯ Key Concepts
+## <Â¯ Key Concepts
 
 - **Statistics**: Histograms showing data distribution
 - **Cardinality Estimation**: Query Optimizer's row count predictions
@@ -46,7 +46,7 @@ SELECT
     CAST(sp.modification_counter * 100.0 / NULLIF(sp.rows, 0) AS DECIMAL(5,2)) AS pct_modified,
     CASE
         WHEN sp.modification_counter > sp.rows * 0.20 THEN '=4 Very stale'
-        WHEN sp.modification_counter > sp.rows * 0.10 THEN '=á Stale'
+        WHEN sp.modification_counter > sp.rows * 0.10 THEN '=Ã¡ Stale'
         ELSE ' Fresh'
     END AS status
 FROM sys.stats s
