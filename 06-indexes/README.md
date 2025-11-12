@@ -39,12 +39,12 @@ AND type_desc = 'CLUSTERED';
 -- Heap vs Clustered comparison
 -- Heap (no clustered index):
 --    Fast inserts
---   L Slow scans
---   L Forwarded records
+--   ❌ Slow scans
+--   ❌ Forwarded records
 -- Clustered:
---    Fast range queries
---    Ordered data
---   L Slower inserts (due to ordering)
+--   � Fast range queries
+--   � Ordered data
+--   ❌ Slower inserts (due to ordering)
 ```
 
 ## Non-Clustered Indexes
