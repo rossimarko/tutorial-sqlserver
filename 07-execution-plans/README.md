@@ -1,6 +1,6 @@
 # Module 07: Execution Plans
 
-## =Ö Overview
+## ðŸ“– Overview
 
 Execution plans show how SQL Server executes queries. Reading and understanding plans is essential for performance tuning. This module covers plan operators, Query Store, and SQL Server 2022 intelligent query processing features.
 
